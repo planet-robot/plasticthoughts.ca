@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Frayn</title>
+
+    <link rel="icon" href="img/favicon-neuron.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .profile-header {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto; /* Center the header and add top margin */
+            border: 1px solid #333;
+            background-color: #0e0e10;
+            overflow: hidden; /* Prevent blank space from appearing */
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: url('img/france_puppet_show.jpg') center/cover no-repeat;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            position: absolute;
+            bottom: -50px; /* Ensures overlap with the banner */
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #000;
+            background: #444;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Profile Info */
+        .profile-info {
+            padding: 20px 20px 5px 140px; /* Account for the profile image */
+        }
+
+        .profile-info p {
+            font-size: 15px;
+            font-weight: normal;
+            color: #fff;
+        }
+
+        .additional-text {
+            margin: 20px;
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        .additional-text p {
+            margin-bottom: 15px;
+        }
+
+        .additional-text p:last-of-type {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .banner {
+                height: 150px;
+            }
+
+            .profile-img {
+                width: 80px;
+                height: 80px;
+                bottom: -40px; /* Adjust for smaller images */
+            }
+
+            .profile-info {
+                padding: 10px 10px 5px 110px; /* Adjust padding for smaller images */
+            }
+
+            .additional-text {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                height: 120px;
+            }
+
+            .profile-img {
+                width: 60px;
+                height: 60px;
+                bottom: -30px; /* Adjust for smaller images */
+            }
+
+            .profile-info {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-header">
+        <!-- Banner Section -->
+        <div class="banner">
+            <div class="profile-img">
+                <img src="img/gonzo.jpg" alt="Profile Image">
+            </div>
+        </div>
+
+        <!-- Profile Info -->
+        <div class="profile-info">
+            <p>"People of Earth, do not be alarmed!"</p>
+        </div>
+        
+        <!-- Additional Text -->
+        <div class="additional-text">            
+            <p>Hmmm, do people still have their own websites anymore? Maybe they're like the detached houses of the internet at this point. Personally, I like having the extra space... even if it takes me a while to start using it all...</p>
+            <hr style="border: 1px solid #333; margin: 20px 0;"> <!-- Added dividing line -->
+            <p><strong><em>Dec 18, 2024</em></strong></p>
+            <p>From Ontario to BC to Ontario to Scotland to England to Scotland to BC to Ontario... it's been quite a journey...</p>
+            <p>You can reach me via good old-fashioned email at: hello[at]plasticthoughts[dot]ca</p>
+            <hr style="border: 1px solid #333; margin: 20px 0;"> <!-- Added dividing line -->
+            <p>* Puppet show, Paris, 1963. Dragon is slain. Photo by Alfred Eisenstaedt.</p>
+        </div>
+    </div>
+</body>
+</html>
